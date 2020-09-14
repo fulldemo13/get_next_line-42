@@ -11,11 +11,14 @@ file descriptor, without the newline.
 # Mandatory part
 
 External functions allowed: read, malloc, free
+
 Description: Write a library that contains ft_printf, a function
 that will mimic the real printf
-Return values: 1 : A line has been read
-0 : EOF has been reached
--1 : An error happened
+
+Return values: 
+1->A line has been read
+0->EOF has been reached
+-1->An error happened
 ```
 -  Calling your function get_next_line in a loop will then allow you to read the text available on a file descriptor one line at a time until the EOF.
 - • Your program must compile with the flag -D BUFFER_SIZE=xx. which will be used
