@@ -20,9 +20,6 @@ Return values:
 0->EOF has been reached
 -1->An error happened
 ```
--  Calling your function get_next_line in a loop will then allow you to read the text available on a file descriptor one line at a time until the EOF.
-- • Your program must compile with the flag -D BUFFER_SIZE=xx. which will be used
-as the buffer size for the read calls in your get_next_line. This value will be
-modified by your evaluators and by moulinette.
-- Your read must use the BUFFER_SIZE defined during compilation to read from
-a file or from stdin.
+- Calling your function get_next_line in a loop will then allow you to read the text available on a file descriptor one line at a time until the EOF.
+- Your program must compile with the flag -D BUFFER_SIZE=xx. which will be used as the buffer size for the read calls in your get_next_line. This value will be modified by your evaluators and by moulinette.
+- Your read must use the BUFFER_SIZE defined during compilation to read from a file or from stdin.
